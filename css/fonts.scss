@@ -1,0 +1,52 @@
+@mixin font-face($url,$name,$weight,$style){
+  @font-face {
+    font-family: $name;
+    src: url('#{$url + $name}.eot?#iefix') format('embedded-opentype'),
+    url('#{$url + $name}.woff') format('woff'),
+    url('#{$url + $name}.ttf')  format('truetype'),
+    url('#{$url + $name}.otf')  format('opentype'),
+    url('#{$url + $name}.svg#OswaldDemiBold') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+$url-to-all: '../font/';
+//100 - Thin
+//200 - Extra Light (Ultra Light)
+//300 - Light
+//400 - Normal (Regular)
+//500 - Medium
+//600 - Semi Bold (Demi Bold)
+//700 - Bold
+//800 - Extra Bold (Ultra Bold)
+//900 - Black (Heavy)
+
+//100 - Thin
+//200 - Extra Light, Ultra Light
+//300 - Light
+//400 - Normal, Book, Regular
+//500 - Medium
+//600 - Semi Bold, Demi Bold
+//700 - Bold
+//800 - Extra Bold, Ultra Bold
+//900 - Black, Heavy
+
+
+@include font-face($url-to-all,'Oswald-Bold','Black','Bold');
+@include font-face($url-to-all,'Oswald-ExtraLight','Black','ExtraLight');
+@include font-face($url-to-all,'Oswald-Light','Black','Light');
+@include font-face($url-to-all,'Oswald-Medium','Black','Medium');
+@include font-face($url-to-all,'Oswald-Regular','Black','Regular');
+@include font-face($url-to-all,'Oswald-SemiBold','Black','SemiBold');
+
+
+//@include font-face($url-to-all,'sf-ui-text-bold-webfont','Bold','normal');
+//@include font-face($url-to-all,'sf-ui-text-boldItalic-webfont','Bold','Italic');
+//@include font-face($url-to-all,'sf-ui-text-heavy-webfont','Heavy','normal');
+//@include font-face($url-to-all,'sf-ui-text-heavyitalic-webfont','Heavy','Italic');
+//@include font-face($url-to-all,'sf-ui-text-italic-webfont','Regular','Italic');
+//@include font-face($url-to-all,'sf-ui-text-light-webfont','Light','normal');
+//@include font-face($url-to-all,'sf-ui-text-lightitalic-webfont','Light','Italic');
+//@include font-face($url-to-all,'sf-ui-text-medium-webfont','Medium','normal');
+//@include font-face($url-to-all,'sf-ui-text-mediumItalic-webfont','Medium','Italic');
+//@include font-face($url-to-all,'sf-ui-text-semibold-webfont','Semi Bold','normal');
