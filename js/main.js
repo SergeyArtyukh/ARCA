@@ -9,6 +9,15 @@
     })
 }(jQuery);
 
+function sliderArrowRight() {
+    getElementsByClassName('enabled').color="red";
+}
+
+jQuery( document ).ready( function( $ ) {
+      $('.arrow-right, .arrow-left').click(function(){
+      $('.slash').toggleClass('enabled');
+});
+
 function initMap() {
     var
         outerLocation = $('#map').attr('data-location'),

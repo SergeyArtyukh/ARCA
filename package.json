@@ -11,7 +11,7 @@
     "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^3.10.0",
     "gulp-sass": "^4.0.1",

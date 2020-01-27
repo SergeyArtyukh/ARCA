@@ -5,8 +5,34 @@
   <div class="exploration-container__content">
     <div class="row">
       <div class="col-md-6">
-        <div class="img-wrap">
-          <img src="img/slider-img1.jpg" alt="#">
+        <div class="slider-container">
+            <div class="slider-container__imgs">
+                <div class="img-wrap">
+                  <img src="img/slider-img1.jpg" alt="#">
+                </div>
+            </div>
+            <div class="slider-container__arrows">
+                <div class="numbers">
+                    <span class="enabled number-class__left">01</span>
+                    <span class="disabled number-class__left">02</span>
+                    <span class="disabled number-class__left">03</span>
+                    <span class="disabled number-class__left">04</span>
+                    <span class="disabled number-class__left">05</span>
+                    <span class="disabled number-class__left">06</span>
+                    <span class="disabled number-class__left">07</span>
+                    <span class="disabled number-class__left">08</span>
+                    <span class="disabled number-class__left">09</span>
+                    <span class="disabled number-class__left">10</span>
+                    <span class="disabled number-class__left">11</span>
+                    <span class="disabled number-class__left">12</span>
+                    <span class="slash">/</span>
+                    <span class="number-class__right">12</span>
+                </div>
+                <div class="arrows ml-10">
+                    <span class="button arrow-left" onClick="sliderArrowRight"><i class="fas fa-caret-left"></i></span>
+                    <span class="button arrow-right ml-2" onClick="sliderArrowRight"><i class="fas fa-caret-right"></i></span>
+                </div>
+            </div>
         </div>
       </div>
       <div class="col-md-6 inline-flex-column">

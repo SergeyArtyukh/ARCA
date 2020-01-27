@@ -34,7 +34,7 @@
         <main>
             <?php
             include 'content/3_Exploration.php';
-            // include 'content/4_Services.php';
+            include 'content/4_CasaAtrio.php';
             // include 'content/5_Partners.php';
             // include 'content/6_Education.php';
             // include 'content/7_Culture.php';

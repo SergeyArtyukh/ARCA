@@ -44,6 +44,9 @@ $modal-on: '.modal-open';
   align-items: center;
   flex-direction: column;
 }
+.justify-content-spacebetween {
+    justify-content: space-between;
+}
 
 .text-decoration-underline {
   text-decoration: underline;
@@ -73,14 +76,14 @@ $modal-on: '.modal-open';
     border-radius: 0;
     border: 0;
 
-    transition: .3s all ease;
+    transition: .3s all ease-in-out;
 
 }
 
 body {
   // background: rgb(20,65,118);
   // background: linear-gradient(0deg, rgba(20,65,118,1) 0%, rgba(55,135,168,1) 13%, rgba(30,207,244,1) 80%, rgba(38,119,165,1) 100%);
-  background-color: #1d6595;
+  background-color: #51a8bb;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -153,8 +156,82 @@ body {
 }
 
 // 3_Exploration
+.ml-10 {
+    margin-left: 100px;
+}
+.arrows {
+    display: flex;
+    .arrow-left {
+        border: 2px solid #54b3c7;
+        padding: 15px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+        &:hover {
+            border: 2px solid #61e3fd;
+            color: #f2f860;
 
+        }
+    }
+    .arrow-right {
+        color: White;
+        border: 2px solid #54b3c7;
+        padding: 15px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid #61e3fd;
+            color: #f2f860;
+        }
+    }
+}
+.numbers {
+    display: flex;
+    .disabled {
+        display: none;
+    }
+    .enabled {
+        display: inline-block;
+    }
+    .number-class__left {
+        font-size: 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+
+        color: white;
+    }
+    .slash {color: white;font-size: 25px;}
+    .number-class__right {
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bold;
+
+        color: white;
+    }
+
+}
 .exploration-container {
+  .slider-container {
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    .slider-container__arrows {
+        display: flex;
+    }
+  }
   .img-wrap {
     img {
       width: 70%;
@@ -194,6 +271,7 @@ body {
       color: white;
       width: 70%;
 
+      font-family: sans-serif;
       line-height: 30px;
     }
   }
@@ -202,7 +280,7 @@ body {
     cursor: pointer;
     position: relative;
 
-    width: 35vh;
+    width: 40vh;
     padding: 15px 15px 15px 25px;
 
     justify-content: space-between;
@@ -223,7 +301,7 @@ body {
       bottom: 0;
       align-items: center;
       display: flex;
-      width: 8vh;
+      width: 10vh;
       justify-content: center;
       background-color: #54b3c7;
       span {
@@ -233,6 +311,25 @@ body {
   }
 }
 
+// 4_CasaAtrio
+
+.CasaAstrio-container {
+    .img-wrap {
+        img {
+            width: 100%;
+        }
+    }
+    .title-container {
+        .h2 {
+            color: #fff;
+            font-size: 90px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: -8px;
+        }
+    }
+}
 
 .header__navbar {
   .header-logo__text {
