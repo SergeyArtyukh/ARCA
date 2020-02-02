@@ -42,7 +42,7 @@
         </main>
         <footer>
             <?php
-            include 'content/8_Footer.php';
+            include 'content/6_Footer.php';
 
             ?>
         </footer>
